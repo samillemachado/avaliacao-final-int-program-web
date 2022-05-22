@@ -6,30 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <title>Recados</title>
+    <title>Sistema de Recados</title>
 </head>
 <body>
-    <!-- logar ou criar um usuário -->
-    
     <main>
         <section id="coluna1">
         
         </section>
+
         <section id="coluna2">
-            <div id="div-entrar">
+            <div id="div-principal">
+
                 <h2 id="texto-titulo">ENTRAR NO SISTEMA DE RECADOS</h2>
-                <form>                    
-                    <input type="email" class= "input-login" name="input-email" id="input-email" placeholder=" nome@email.com.br" required>                
-                    
-                    <input type="password" class= "input-login" name="input-senha" id="input-senha" placeholder=" password" required>
+
+                <form id="form-login"> 
+
+                    <input 
+                    type="email" 
+                    class= "input-login" 
+                    name="input-email" 
+                    id="input-email" 
+                    placeholder="nome@email.com.br">              
+                                       
+                    <input 
+                    type="password" 
+                    class= "input-login" 
+                    name="input-senha" 
+                    id="input-senha" 
+                    placeholder="senha">
                 
-                    <input type="button" class="btn" value="ENTRAR">
+                    <input type="submit" class="btn" value="ENTRAR">
+
                 </form>
-                <a href="./signup.html">CRIAR CONTA</a>
-            </div>
-        
+
+                <div><a id="link-criar" href="./signup.html">CRIAR CONTA</a></div>
+            </div>  
         </section>
     </main>
-    
+    <script src="./script/index.js"></script>
 </body>
 </html>

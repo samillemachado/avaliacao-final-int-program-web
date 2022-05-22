@@ -10,34 +10,35 @@
 </head>
 <body>
     <main>
-        <section class="section-painel">
-            <h2 id="titulo-pagina">MEUS RECADOS</h2>
-            <form id="form-painel">
-                <input type="text"  id="input-desc" placeholder=" Descrição">
-                <input type="text" id="input-det" placeholder=" Detalhamento">
-                <input type="submit" class="btn" id="btn-salvar" value="Salvar">
-            </form>
+        <section class="painel">
+            <div class="painel-dados">
+                <h2 id="titulo-pagina">MEUS RECADOS</h2>
+                <form id="form-painel">                    
+                    <input type="text"  id="input-desc" placeholder="Descrição">
+                    <input type="text" id="input-det" placeholder="Detalhamento">
+                    <input type="submit" class="btn" id="btn-salvar" value="SALVAR">
+                </form>
+            </div>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Código</th>
-                        <th>Descrição</th>
-                        <th>Detalhamento</th>
-                        <th>Ação</th>
-                    </tr>        
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="painel-recados">
+                <table id="tabela-recados">
+                    <thead>
+                        <tr>
+                            <th id="th-codigo">Código</th>
+                            <th id="th-descricao">Descrição</th>
+                            <th id="th-detalhamento">Detalhamento</th>
+                            <th id="th-acao">Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        <tr id="linha-inicial">
+                            <td colspan="4" class= "linha">Nenhum recado cadastrado.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
     </main>
+    <script src="./script/painel.js"></script>
 </body>
 </html>

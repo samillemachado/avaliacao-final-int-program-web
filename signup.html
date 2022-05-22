@@ -8,32 +8,52 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Sign Up</title>
 </head>
-<body>
-    <!-- logar ou criar um usuário -->
-    
+<body> 
     <main>
         <section id="coluna1">
         
         </section>
-        <section id="coluna2">
-            <div id="div-entrar">
-                <h2 id="texto-criar">CRIAR UMA CONTA</h2>
-                <form>
-                    <label for="signup-email">e-mail:</label>
-                    <input type="email" name="signup-email" class="input-signup"id="signup-email" placeholder=" nome@email.com.br" required>
-                
-                    <label for="signup-senha">senha:</label>
-                    <input type="password" name="signup-senha" class="input-signup" id="signup-senha" placeholder=" 123456" required>
 
-                    <label for="signup-senha">repete senha:</label>
-                    <input type="password" name="signup-repete-senha" class="input-signup" id="campo-repete-senha" placeholder=" 123456" required>
+        <section id="coluna2">
+            <div id="div-principal">
+
+                <h2 id="texto-criar">CRIAR UMA CONTA</h2>
+
+                <form id="form-signup">
+
+                    <label for="signup-email" id="label-input-email" >e-mail:</label>
+                    <input 
+                        type="email" 
+                        name="input-email"
+                        class="input-signup"
+                        id="input-signup-email"
+                        placeholder="nome@email.com.br">
                 
-                    <input type="button" class="btn" value="CRIAR CONTA">
-                </form>                
-            </div>
-        
+                    <label for="signup-senha" id="label-input-senha">senha:</label>
+                    <input 
+                        type="password" 
+                        name="signup-senha" 
+                        class="input-signup" 
+                        id="input-signup-senha" 
+                        placeholder="123456">
+
+                    <label for="signup-senha" id="label-input-repete-senha">repete senha:</label>
+                    <input 
+                        type="password" 
+                        name="signup-repete-senha" 
+                        class="input-signup" 
+                        id="input-signup-repete-senha" 
+                        placeholder="123456">
+                
+                    <input id="btn-criar" type="submit" class="btn" value="CRIAR CONTA">                    
+                    
+                </form> 
+
+                <div><a id="link-voltar" href="./index.html">VOLTAR PARA LOGIN</a> </div>           
+            </div>        
         </section>
+
     </main>
-    
+    <script src="./script/signup.js"></script>
 </body>
 </html>
