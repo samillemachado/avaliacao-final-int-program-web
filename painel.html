@@ -6,25 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/2f97a8678b.js" crossorigin="anonymous"></script>
+
     <title>Painel de Recados</title>
 </head>
 <body>
     <main>
         <section class="painel">
-            <div class="painel-dados">
-                <h2 id="titulo-pagina">MEUS RECADOS</h2>
-                <form id="form-painel">                    
-                    <input type="text"  id="input-desc" placeholder="Descrição">
-                    <input type="text" id="input-det" placeholder="Detalhamento">
-                    <input type="submit" class="btn" id="btn-salvar" value="SALVAR">
-                </form>
+            <div class="painel-dados"> 
+                <div class="div-logout">
+                    <a id="link-logout" href="./index.html"> 
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </a>
+                </div> 
+                                     
+                    <h2 id="titulo-pagina">MEUS RECADOS</h2>
+
+                    <form id="form-painel">
+                        <input type="text"  id="input-numero-id" placeholder="ID">                    
+                        <input type="text"  id="input-desc" placeholder="Descrição">
+                        <input type="text" id="input-det" placeholder="Detalhamento">
+                        <input type="submit" class="btn" id="btn-salvar" value="SALVAR">
+                    </form>
             </div>
 
             <div class="painel-recados">
                 <table id="tabela-recados">
                     <thead>
                         <tr>
-                            <th id="th-codigo">Código</th>
+                            <th id="th-codigo">ID</th>
                             <th id="th-descricao">Descrição</th>
                             <th id="th-detalhamento">Detalhamento</th>
                             <th id="th-acao">Ação</th>

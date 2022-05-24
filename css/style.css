@@ -1,5 +1,3 @@
-/* ---------------- GERAL ---------------- */
-
 :root {
     --cor0: #ffffff;
     --cor1: #d9d9d9;
@@ -23,7 +21,7 @@ body {
 }
  
 #coluna1 {
-    width: 40vw;
+    width: 45vw;
     height: 100vh; 
     background-image:url(../images/capa.jpg);
     opacity: 80%;
@@ -33,7 +31,7 @@ body {
 }
 
 #coluna2 {
-    width: 60vw;
+    width: 55vw;
     height: 100vh;        
     position: absolute;
     right: 0; 
@@ -49,7 +47,7 @@ body {
 
 h2 {
     color: var(--cor5);
-    font: normal normal lighter 1.3rem sans-serif;
+    font: normal normal lighter 1.4em sans-serif;
     display: block;
     text-align: center;
     margin-bottom: 30px;
@@ -64,7 +62,7 @@ input.input-login {
     height: 40px;
     border: 1px var(--cor1) solid; 
     border-radius: 5px;  
-    font-size: 1.1rem;
+    font-size: 1.1em;
 }
 
 input.btn {
@@ -76,7 +74,7 @@ input.btn {
     border: none;
     border-radius: 5px;
     color: var(--cor0); 
-    font: normal normal lighter 0.9rem Helvetica, sans-serif; 
+    font: normal normal lighter 0.9em Helvetica, sans-serif; 
     cursor: pointer;  
 }
 
@@ -84,10 +82,15 @@ input.btn:hover {
     background-color: var(--cor3);
 }
 
+::placeholder{
+    color: var(--cor1);
+    font-weight: lighter;
+}
+
 a {
     text-decoration: none;
     color: var(--cor4);
-    font: normal normal lighter 0.7rem Helvetica, sans-serif; 
+    font: normal normal lighter 0.7em Helvetica, sans-serif; 
 }
 
 a:hover{
@@ -102,7 +105,7 @@ form {
 
 label {
     color: var(--cor4);
-    font-size: 0.9rem;   
+    font-size: 0.9em;   
 }
 
 input.input-signup {
@@ -111,13 +114,13 @@ input.input-signup {
     height: 40px;
     border: 1px var(--cor1) solid;
     margin-bottom: 15px;  
-    font-size: 1.1rem;  
+    font-size: 1.1em;  
 }
 
 /* ----------------- PAINEL ----------------- */
 section.painel {
     max-width: 100vw;
-    height: 100vh;      
+    height: 100vh;   
 }
 
 div.painel-dados {
@@ -136,10 +139,19 @@ div.painel-recados {
 
 #titulo-pagina {
     color: var(--cor5);
-    font: normal normal lighter 1.4rem sans-serif;
+    font: normal normal lighter 1.4em sans-serif;
     display: block;
     text-align: left;
     margin-bottom: 5px;
+}
+
+div.div-logout {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#link-logout {    
+    color: var(--cor5);
 }
 
 #form-painel {
@@ -147,16 +159,19 @@ div.painel-recados {
     justify-content:space-between; 
 }
 
+#input-numero-id {
+    width: 100px;   
+    border-radius: 5px;    
+}
+
 #input-desc {
-    width: 400px;
-    border: 1px var(--cor1) solid;
+    width: 400px; 
     border-radius: 5px;    
 }
 
 #input-det {
     display: flex;
-    width: 900px;   
-    border: 1px var(--cor1) solid;
+    width: 800px;       
     border-radius: 5px;    
 }
 
@@ -166,7 +181,7 @@ div.painel-recados {
     margin-top: 0;
 }
 
-table#tabela-recados {
+#tabela-recados {
     width: 95%;    
     max-width: 100vw;  
     position: absolute;
@@ -192,9 +207,9 @@ table#tabela-recados {
     border-bottom: 1px solid var(--cor1);
     border-left: 0;
     border-right: 0;
-    font-size: 0.9rem;
-      
+    font-size: 0.9em;
 }
+
 .linha:hover{
     background-color: var(--cor1);
     color: var(--cor4);    
@@ -210,7 +225,7 @@ input.btn-registros:hover {
     cursor: pointer;
 }
 
-tr#linha-inicial{
+#linha-inicial{
     text-align: center;
     color: var(--cor1);
 }
@@ -222,12 +237,5 @@ th {
     border-left: 0;
     border-right: 0;  
     text-align: left;  
-    font-size: 1.1rem; 
-};
-
-
-
-
-
-
-
+    font-size: 1.1em; 
+}
