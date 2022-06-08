@@ -3,7 +3,7 @@ let formLogin = document.querySelector("#form-login");
 let inputEmail = document.querySelector("#input-email");
 let inputSenha = document.querySelector("#input-senha");
 
-let usuarios = JSON.parse(localStorage.getItem("usuarios"));
+let usuarios = JSON.parse(localStorage.getItem("usuarios") || []);
 
 
 formLogin.addEventListener("submit", (e) => {
